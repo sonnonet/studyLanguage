@@ -1,11 +1,15 @@
-# C
-[python] (https://www.python.org/)
-<u>밑줄</u>
+[네이버](https://naver.com)
+```c
+#include <stdio.h>
 
-  - 1주차 -1
-    - 1주차 -2 
-  - 2주차
-  - 
-  
-## C-1
-### C-2
+int main()
+{
+  int a = 10;
+  int b = 20;
+  int c = a+b
+  printf("%f + %d = %d ",10.5, 20, 30)
+   printf("%d + %d = %d",a ,b, a+b);
+
+  return 0;
+}
+```
