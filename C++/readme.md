@@ -1,3 +1,20 @@
+# 2024-11-29 (명품 C++)
+## P263 
+  - 묵시적 복사 생성에 의해 복사 생성자가 자동 호출되는 경우
+  ```c++
+    void f(Person person){
+      person.changeName("dummy");
+    }
+    Person g(){
+      Person mother(2, "Jane");
+      return mother;
+    }
+    int main(){
+      Person father(1,"Kitae");
+      Person son = father; //복사생성자 호출
+      f(father); //복사 생성자 호출
+      g(); //복사 생성자 호출
+    }
 # 2024-11-28 (명품 C++)
 ## p229 5.3 객체 치환 및 객체 리턴
   - 객체 치환
